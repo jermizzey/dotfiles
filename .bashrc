@@ -44,9 +44,6 @@ alias holybicep='ssh -YC holybicep01'
 alias spudws4='ssh -YC jcheshire@spudws4.spa.umn.edu'
 
 # misc utility aliases
-alias update='sudo pacman -Syu' # Pacman
-#alias update='sudo dnf upgrade --refresh' # DNF
-#alias update='sudo apt-get update; sudo apt-get upgrade' # Aptitude
 alias diskspace='du -hS | sort -n -r | more'
 alias rsync='rsync -axvuP'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -117,3 +114,6 @@ if [[ $HOSTNAME =~ .*"rclogin".* ]] || [[ $HOSTNAME =~ .*"holybicep".* ]]; then
     }
     
 fi
+
+archey3
+source /usr/share/doc/pkgfile/command-not-found.bash
